@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Password generation</title>
+<style>
+.container { 
+  height: 300px;
+  position: relative;
+}
+
+button {
+	border-radius: 0.25rem;
+	border-color: #008800;
+	color: #ffffff;
+	background-color: #008800;
+	height: 100px;
+	width: 200px;
+}
+
+button a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 28;
+}
+
+p {
+	font-size: 18;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 200px;*/
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="center">
+		<button><a href='/generated'> Generate </a></button>
+	</div>
+</div>
+<div class="center-result">
+	{% block content %}
+	<p>Press generate!</p>
+	{% endblock %}
+</div>
+</body>
+</html>
